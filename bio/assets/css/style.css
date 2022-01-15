@@ -1466,12 +1466,14 @@ span {
 #myProgress {
   width: 100%;
   background-color: rgb(240, 240, 240);
+  border-radius: 5px;
 }
 
 #myBar {
   width: 1%;
   height: 30px;
   background-color: #5fcf80;
+  border-radius: 5px;
 }
 
 .craniu-dot {
