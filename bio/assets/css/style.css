@@ -1555,3 +1555,12 @@ span {
 .learn {
   margin-top: 0!important;
 }
+
+.invata-instructions {
+  color: black;
+  margin-top: 30px;
+}
+
+.instructions {
+  margin-top: 100px!important;
+}
