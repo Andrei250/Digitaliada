@@ -249,12 +249,16 @@
                   </div>
                 </div>
               </div>
+              
+              <div style=" margin-top: 50px;">
+                <p style="text-align: center;"> Progresul tău </p>
+              </div>
 
-              <div id="myProgress" style=" margin-top: 50px;">
+
+              <div id="myProgress">
                 <div id="myBar"> </div>
               </div>
 
-              <p style="text-align: center;"> Progresul tău </p>
 
           </div>
 
@@ -309,8 +313,7 @@
     $('.black-dot').click((e) => {
       if(i == $(questions).length - 1){
         $(questions[i]).hide();
-        i++;
-        move(i * 100 / questions.length)
+        move((i + 1) * 100 / questions.length)
         $(result).show()
         $('#score').html(cnt)
         console.log(cnt);
