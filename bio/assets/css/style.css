@@ -468,12 +468,15 @@ section {
   color: #37423b;
 }
 
+span {
+  color: #5fcf80;
+}
+
 .breadcrumbs {
   margin-top: 73px;
   text-align: center;
-  background: #5fcf80;
   padding: 30px 0;
-  color: #fff;
+  color: #5fcf80;
 }
 @media (max-width: 992px) {
   .breadcrumbs {
@@ -1457,8 +1460,7 @@ section {
 }
 
 .text-container {
-  width: 400px;
-  margin-top: 100px;
+  width: 500px;
 }
 
 #myProgress {
