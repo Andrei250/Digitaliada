@@ -309,7 +309,10 @@
     $(questions[i]).show();
 
     $('.black-dot').click((e) => {
-      if(i == $(questions).length){
+      if(i == $(questions).length - 1){
+        $(questions[i]).hide();
+        i++;
+        move(i * 100 / questions.length)
         $(result).show()
         $('#score').html(cnt)
         console.log(cnt);
