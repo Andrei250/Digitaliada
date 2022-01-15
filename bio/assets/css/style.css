@@ -1465,13 +1465,13 @@ span {
 
 #myProgress {
   width: 100%;
-  background-color: grey;
+  background-color: rgb(240, 240, 240);
 }
 
 #myBar {
   width: 1%;
   height: 30px;
-  background-color: green;
+  background-color: #5fcf80;
 }
 
 .craniu-dot {
@@ -1532,4 +1532,20 @@ span {
 .clavicula-dot {
   left: 172px;
   top: 117px;
+}
+
+@media (max-width: 1200px) {
+  .answer{
+    width: 400px !important;
+    padding:0;
+  }
+
+  .card {
+    width: 400px !important;
+  }
+
+  .text-container{
+    width: 400px;
+  }
+  
 }
