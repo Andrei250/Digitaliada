@@ -1471,3 +1471,63 @@ section {
   height: 30px;
   background-color: green;
 }
+
+.craniu-dot {
+  left: 122px;
+  top: 17px;
+}
+
+.stern-dot {
+  left: 122px;
+  top: 149px;
+}
+
+.humerus-dot {
+  left: 190px;
+  top: 140px;
+}
+
+.femur-dot {
+  left: 87px;
+  top: 334px;
+}
+
+.coaste-dot {
+  left: 145px;
+  top: 145px;
+}
+
+.coloana-vertebrala-dot {
+  left: 122px;
+  top: 225px;
+}
+
+.tibie-dot {
+  left: 102px;
+  top: 455px;
+}
+
+.peroneu-dot {
+  left: 86px;
+  top: 444px;
+}
+
+.falange-dot {
+  left: 32px;
+  top: 321px;
+}
+
+.maxilar-dot {
+  left: 122px;
+  top: 64px;
+}
+
+.pelvis-dot {
+  left: 102px;
+  top: 263px;
+}
+
+.clavicula-dot {
+  left: 172px;
+  top: 117px;
+}
