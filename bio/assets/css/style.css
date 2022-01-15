@@ -1456,7 +1456,7 @@ span {
 }
 
 .answer {
-  width: auto;
+  width: 500px;
 }
 
 .text-container {
@@ -1550,4 +1550,8 @@ span {
     width: 400px;
   }
   
+}
+
+.learn {
+  margin-top: 0!important;
 }
