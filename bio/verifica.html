@@ -58,6 +58,7 @@
   <main id="main" style="margin-top: 30px;">
     <section class="quiz">
       <div class="container">
+        
         <div class="row justify-content-between align-items-start">
           <div class="human-body">
               <img class="human-body-img" src="assets/img/images/poza.png" />
@@ -78,114 +79,69 @@
               <div class="black-dot pancreas-dot" data-value="pancreas"></div>
           </div>
 
-          <div class="questions">
+          <div class="answer">
+              <div id="myProgress">
+                <div id="myBar"></div>
+              </div>
+              
+              <div id="result">
+                <p>Ai luat <span id="score"></span> din 3456</p>
+              </div>
+
               <div class="text-container" id="creier">
-                kfadsnbjkflbsdaflsdbafsdaf
-                dsaf
-                dsaffgsda
-                get-started-btnagdsagdsagdsagdsagsadgsdagasdgsdagsdag
-                gasdgsdagdsagsadgsdgsadgasgfvdfavadfvervreverveerverve
+                creier
               </div>
 
               <div class="text-container" id="ureche">
-                kfadsnbjkflbsdaflsdbafsdaf
-                dsaf
-                dsaffgsda
-                get-started-btnagdsagdsagdsagdsagsadgsdagasdgsdagsdag
-                gasdgsdagdsagsadgsdgsadgasgfvdfavadfvervreverveerverve
+                kureche
               </div>
 
               <div class="text-container" id="ochi">
-                kfadsnbjkflbsdaflsdbafsdaf
-                dsaf
-                dsaffgsda
-                get-started-btnagdsagdsagdsagdsagsadgsdagasdgsdagsdag
-                gasdgsdagdsagsadgsdgsadgasgfvdfavadfvervreverveerverve
+                ochi
               </div>
 
               <div class="text-container" id="tiroida">
-                kfadsnbjkflbsdaflsdbafsdaf
-                dsaf
-                dsaffgsda
-                get-started-btnagdsagdsagdsagdsagsadgsdagasdgsdagsdag
-                gasdgsdagdsagsadgsdgsadgasgfvdfavadfvervreverveerverve
+                tiroida
               </div>
 
               <div class="text-container" id="plamani">
-                kfadsnbjkflbsdaflsdbafsdaf
-                dsaf
-                dsaffgsda
-                get-started-btnagdsagdsagdsagdsagsadgsdagasdgsdagsdag
-                gasdgsdagdsagsadgsdgsadgasgfvdfavadfvervreverveerverve
+                plamaani
               </div>
 
               <div class="text-container" id="inima">
-                kfadsnbjkflbsdaflsdbafsdaf
-                dsaf
-                dsaffgsda
-                get-started-btnagdsagdsagdsagdsagsadgsdagasdgsdagsdag
-                gasdgsdagdsagsadgsdgsadgasgfvdfavadfvervreverveerverve
+                inima
               </div>
 
               <div class="text-container" id="ficat">
-                kfadsnbjkflbsdaflsdbafsdaf
-                dsafdumi e ficats
+                ficat
               </div>
 
               <div class="text-container" id="stomac">
-                kfadsnbjkflbsdaflsdbafsdaf
-                dsaf
-                dsaffgsda
-                get-started-btnagdsagdsagdsagdsagsadgsdagasdgsdagsdag
-                gasdgsdagdsagsadgsdgsadgasgfvdfavadfvervreverveerverve
+                stomac
               </div>
 
               <div class="text-container" id="rinichi">
-                kfadsnbjkflbsdaflsdbafsdaf
-                dsaf
-                dsaffgsda
-                get-started-btnagdsagdsagdsagdsagsadgsdagasdgsdagsdag
-                gasdgsdagdsagsadgsdgsadgasgfvdfavadfvervreverveerverve
+                rinchi
               </div>
 
               <div class="text-container" id="intestin-gros">
-                kfadsnbjkflbsdaflsdbafsdaf
-                dsaf
-                dsaffgsda
-                get-started-btnagdsagdsagdsagdsagsadgsdagasdgsdagsdag
-                gasdgsdagdsagsadgsdgsadgasgfvdfavadfvervreverveerverve
+                intenstin grosos
               </div>
 
               <div class="text-container" id="intestin-subtire">
-                kfadsnbjkflbsdaflsdbafsdaf
-                dsaf
-                dsaffgsda
-                get-started-btnagdsagdsagdsagdsagsadgsdagasdgsdagsdag
-                gasdgsdagdsagsadgsdgsadgasgfvdfavadfvervreverveerverve
+                intestin skinny
               </div>
 
               <div class="text-container" id="vezica-urinara">
-                kfadsnbjkflbsdaflsdbafsdaf
-                dsaf
-                dsaffgsda
-                get-started-btnagdsagdsagdsagdsagsadgsdagasdgsdagsdag
-                gasdgsdagdsagsadgsdgsadgasgfvdfavadfvervreverveerverve
+                vezica pipi
               </div>
 
               <div class="text-container" id="vezica-biliara">
-                kfadsnbjkflbsdaflsdbafsdaf
-                dsaf
-                dsaffgsda
-                get-started-btnagdsagdsagdsagdsagsadgsdagasdgsdagsdag
-                gasdgsdagdsagsadgsdgsadgasgfvdfavadfvervreverveerverve
+                vezica 8 ball pool
               </div>
 
               <div class="text-container" id="pancreas">
-                kfadsnbjkflbsdaflsdbafsdaf
-                dsaf
-                dsaffgsda
-                get-started-btnagdsagdsagdsagdsagsadgsdagasdgsdagsdag
-                gasdgsdagdsagsadgsdgsadgasgfvdfavadfvervreverveerverve
+                tigaie creas
               </div>
           </div>
 
@@ -228,20 +184,42 @@
   <script>
     var image = document.querySelector('.human-body-img')
 
-    $('.human-body').mousemove((e) => {
-      let x = e.pageX - $(e.target).offset().left;
-      let y = e.pageY - $(e.target).offset().top;
-      console.log(x + ' ' + y);
-    })
 
     $('.text-container').hide();
+    let questions = $('.text-container');
+    
+    let result = $('#result')
+    $(result).hide();
+
+    let cnt = 0;
+    let i = 0;
+    $(questions[i]).show();
 
     $('.black-dot').click((e) => {
-      $('.text-container').hide();
-      let id = $(e.target).data('value')
+      if(i == $(questions).length){
+        $(result).show()
+        $('#score').html(cnt)
+        console.log(cnt);
+        return;
+      } 
 
-      $('#' + id).show();
+      let id;
+      id = $(e.target).data('value');
+      if(id == $(questions[i]).attr('id')){
+        cnt++
+      }
+
+      $(questions[i]).hide();
+      i++;
+      move(i * 100 / questions.length)
+      $(questions[i]).show();
+
     });
+
+    var progresBar = document.getElementById("myBar");
+    function move(width) {
+      progresBar.style.width = width + "%";
+    }
 
   </script>
 
