@@ -97,7 +97,12 @@
                             <div class="card-body">
                                 <h4 class="card-title" style="text-align: center;">Ai luat <span id="score"></span> din
                                     10</h4>
+
+                                <div class="card-text" id="raspunsuri">
+
+                                </div>
                             </div>
+
                         </div>
                     </div>
 
@@ -222,6 +227,72 @@
                             </div>
                         </div>
                     </div>
+<!-- ################################################################### -->
+                    <div class="text-container" id="ochi">
+                        <div class="card" style="width: 100%">
+                            <div class="card-body">
+                                <h4 class="card-title" style="text-align: center;"><span>Intrebare: </span></h4>
+                                <div class="card-text">
+                                    Organul de simț care conține celule specializate pentru a capta din mediu informațiile luminoase este?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-container" id="pelvis">
+                        <div class="card" style="width: 100%">
+                            <div class="card-body">
+                                <h4 class="card-title" style="text-align: center;"><span>Intrebare: </span></h4>
+                                <div class="card-text">
+                                    Structură anatomică sub formă de pâlnie
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-container" id="ficat">
+                        <div class="card" style="width: 100%">
+                            <div class="card-body">
+                                <h4 class="card-title" style="text-align: center;"><span>Intrebare: </span></h4>
+                                <div class="card-text">
+                                    Ce organ este dominant in realizarea proceselor metabolismului?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-container" id="clavicula">
+                        <div class="card" style="width: 100%">
+                            <div class="card-body">
+                                <h4 class="card-title" style="text-align: center;"><span>Intrebare: </span></h4>
+                                <div class="card-text">
+                                    Un os lung, dublu curbat și pereche, care formează porțiunea anterioară a centurii scapulare.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-container" id="stomacul">
+                        <div class="card" style="width: 100%">
+                            <div class="card-body">
+                                <h4 class="card-title" style="text-align: center;"><span>Intrebare: </span></h4>
+                                <div class="card-text">
+                                    Porţiunea cea mai dilatată a tubului digestiv.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-container" id="coaste">
+                        <div class="card" style="width: 100%">
+                            <div class="card-body">
+                                <h4 class="card-title" style="text-align: center;"><span>Intrebare: </span></h4>
+                                <div class="card-text">
+                                    Oase plate care fac parte din cutia toracică pentru a ajuta la protejarea organelor interne.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div style=" margin-top: 50px;">
                         <p style="text-align: center;"> Progresul tău </p>
@@ -280,6 +351,8 @@
     let result = $('#result')
     $(result).hide();
 
+    questions = questions.sort(() => Math.random() - Math.random()).slice(0, 10)
+
     let cnt = 0;
     let i = 0;
     $(questions[i]).show();
@@ -290,7 +363,13 @@
             move((i + 1) * 100 / questions.length)
             $(result).show()
             $('#score').html(cnt)
-            console.log(cnt);
+
+            $(questions).each((_, element) => {
+                let el = '<p>' + $($($($(element).children()[0]).children()[0]).children()[1]).text() + ' => ' + $(element).attr('id') + '</p>';
+
+                $('#raspunsuri').append(el);
+            });
+
             return;
         }
 
