@@ -382,7 +382,7 @@
             $('#score').html(cnt)
 
             $(questions).each((_, element) => {
-                let el = '<p>' + $($($($(element).children()[0]).children()[0]).children()[1]).text() + ' => ' + $(element).attr('id') + '</p>';
+                let el = '<p>' + $($($($(element).children()[0]).children()[0]).children()[1]).text() + ' <br/><span>Răspunsul Corect: </span> ' + $(element).attr('id').toUpperCase() + '</p>';
 
                 $('#raspunsuri').append(el);
             });
