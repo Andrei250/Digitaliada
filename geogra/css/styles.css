@@ -11520,7 +11520,7 @@ html {
   position: relative;
 }
 
-.punct {
+.punct, .punct-relief {
   position: absolute;
   width: 20px;
   height: 20px;
