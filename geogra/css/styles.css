@@ -34,7 +34,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #1abc9c;
-  --bs-secondary: #2c3e50;
+  --bs-secondary: #34271C;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -42,7 +42,7 @@
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-primary-rgb: 26, 188, 156;
-  --bs-secondary-rgb: 44, 62, 80;
+  --bs-secondary-rgb: 52, 39, 28;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -4029,6 +4029,7 @@ textarea.form-control-lg {
 }
 
 .navbar {
+  background-color: #C9BCA8 !important;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -7811,6 +7812,11 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
 
+.header-image{
+  background-image: url("../assets/earth.jpg");
+  background-size: cover;
+}
+
 .bg-secondary {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
@@ -11505,7 +11511,7 @@ html {
 }
 
 .copyright {
-  background-color: #1a252f;
+  background-color: #34271C;
 }
 
 
