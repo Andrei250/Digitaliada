@@ -7814,6 +7814,7 @@ textarea.form-control-lg {
 
 .header-image{
   background-image: url("../assets/earth.jpg");
+
   background-size: cover;
 }
 

@@ -1,303 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Învață Geografie!</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
-        
-        <style>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Învață Geografie!</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet"/>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
 
-            #cross{
-                text-align: center;
-                width:30px;
-                height:30px;
-                margin: 0;
-                padding: 0;
-                border-collapse: collapse;
-                border: 1px solid white;
-            }
-            #buttons{
-                width:30%;
-                float: right;
-            }
-            tr{
-                margin: 0;
-                padding: 0;
-                border-collapse: collapse;
-            }
-            td{
-                height: 30px;
-                width: 30px;
-            }
-            #leftBox{
-                float: left;
-            }
-            #rightBox{
-                float: left;
-                clear:left;
-            }
-            .butt{
-                height:50px;
-                width: 107px;
-            }
-            #puzzel{
-                text-align: center;
-                margin: 0;
-                padding: 0;
-                border-collapse: collapse;
-                border: 1px solid black;
-            }
-            .inputBox{
-                    width: 40px;
-                    height:40px;
-                    border: 1px solid black;
-                    text-align: center;
-            }
-            #hintsTable{
-                width: 480px;
-                float: left;
-                clear: left;
-            }
-            </style>
-   
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top">Învață Geografie!</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Meniu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Hartă</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Exerciții</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead header-image text-white text-center" style="height: 700px;">
-            <div class="d-flex align-items-center mx-auto flex-column" style="margin-top: 150px;">
-                <!-- Masthead Avatar Image-->
-                <!-- <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." /> -->
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Învață Geografie!</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Învață geografie cu ajutorul hartei interactive!</p>
-            </div>
-        </header>
-        <!-- Portfolio Section-->
-     
-        <section id="harta">
-            <div class="container">
-                <div class="row">
-                    
-                </div>
-            </div>
-        </section>
+    <style>
 
-        <section id="puzzle">
-            <div class="container">
-                <div class="row">
-                    <div id="leftBox">
-                        <table id="puzzel" style="margin-top:20px;">
+        #cross {
+            text-align: center;
+            width: 30px;
+            height: 30px;
+            margin: 0;
+            padding: 0;
+            border-collapse: collapse;
+            border: 1px solid white;
+        }
 
-                        </table>
-                        </div>
-                        <div id="rightBox">
-                        <table>
-                            <tr><td><input class="butt"  type="submit" value="Clear All" onclick="clearAllClicked()"></td>
-                            <td><input class="butt"  type="submit" value="Check" onclick="checkClicked()"></td>
-                           </tr>
-                        </table>
-                        </div>
-                        <table id="hintsTable">
-                                <tr>
-                                    <td><strong>Orizontal:</strong></td><td><strong>Vertical:</strong></td>
-                                </tr>
-                                <tr>
-                                    <td>1.forma de stat feudal-teocratica  intemeiata de arabi pe teritoriile stapanite de ei</td><td>2. acte intenționate de violență comise de un grup  pentru a provoca o teamă generalizată și pentru atingerea unor scopuri</td>
-                                </tr>
-                                <tr>
-                                    <td>3.legea islamica</td><td>6. legea statului islamic</td>
-                                </tr>
-                                <tr>
-                                    <td>4. razboi sfant islamic</td><td>7. minoritate islamica connsiderati“infideli-apostazi” de catre DAESH</td>
-                                </tr>
-                                <tr>
-                                    <td>5.numele atribuit statului Islamic de catre tarile occidentate</td>
-                                </tr>
-                        </table>
-                </div>
-            </div>
-        </section>
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Your Website 2021</small></div>
+        #buttons {
+            width: 30%;
+            float: right;
+        }
+
+        tr {
+            margin: 0;
+            padding: 0;
+            border-collapse: collapse;
+        }
+
+        td {
+            height: 30px;
+            width: 30px;
+        }
+
+        #leftBox {
+            float: left;
+        }
+
+        #rightBox {
+            float: left;
+            clear: left;
+        }
+
+        .butt {
+            height: 50px;
+            width: 107px;
+        }
+
+        #puzzel {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        .inputBox {
+            width: 40px;
+            height: 40px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        #hintsTable {
+            width: 480px;
+            float: left;
+            clear: left;
+        }
+    </style>
+
+</head>
+<body id="page-top">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#page-top">Învață Geografie!</a>
+        <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+            Meniu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                                                     href="#portfolio">Hartă</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                                                     href="#about">Exerciții</a></li>
+            </ul>
         </div>
-       
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </div>
+</nav>
+<!-- Masthead-->
+<header class="masthead header-image text-white text-center" style="height: 700px;">
+    <div class="d-flex align-items-center mx-auto flex-column" style="margin-top: 150px;">
+        <!-- Masthead Avatar Image-->
+        <!-- <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." /> -->
+        <!-- Masthead Heading-->
+        <h1 class="masthead-heading text-uppercase mb-0"
+            style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Învață Geografie!</h1>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Masthead Subheading-->
+        <p class="masthead-subheading font-weight-light mb-0"
+           style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Învață geografie cu ajutorul
+            hărții interactive!</p>
+    </div>
+</header>
+<!-- Portfolio Section-->
 
-        <script>
-            //Globals
-            var currentTextInput;
-            var puzzelArrayData;
-            //Loads the Crossword
-            function initializeScreen(){
-                var puzzelTable = document.getElementById("puzzel");
-                puzzelArrayData = preparePuzzelArray();
-                for ( var i = 0; i < puzzelArrayData.length ; i++ ) {
-                    var row = puzzelTable.insertRow(-1);
-                    var rowData = puzzelArrayData[i];
-                    for(var j = 0 ; j < rowData.length ; j++){
-                        var cell = row.insertCell(-1);
-                        if(rowData[j] != 0){
-                            var txtID = String('txt' + '_' + i + '_' + j);
-                            cell.innerHTML = '<input type="text" class="inputBox" maxlength="1" style="text-transform: lowercase" ' + 'id="' + txtID + '" onfocus="textInputFocus(' + "'" + txtID + "'"+ ')">';
-                        }else{
-                            cell.style.backgroundColor  = "black";
-                        }
-                    }
-                }
-                addHint();
-            }
-            //Adds the hint numbers
-            function addHint(){
-                document.getElementById("txt_0_2").placeholder = "1";
-                document.getElementById("txt_0_8").placeholder = "2";
-                document.getElementById("txt_5_0").placeholder = "3,6";
-                document.getElementById("txt_2_5").placeholder = "4";
-                document.getElementById("txt_6_5").placeholder = "5";
-                document.getElementById("txt_3_0").placeholder = "7";
+<section id="harta">
+    <div class="container">
+        <div class="row">
 
+        </div>
+    </div>
+</section>
+
+<section id="puzzle">
+    <div class="container">
+        <div class="row">
+            <div id="leftBox">
+                <table id="puzzel" style="margin-top:20px;">
+
+                </table>
+            </div>
+            <div id="rightBox">
+                <table>
+                    <tr>
+                        <td><input class="butt" type="submit" value="Clear All" onclick="clearAllClicked()"></td>
+                        <td><input class="butt" type="submit" value="Check" onclick="checkClicked()"></td>
+                    </tr>
+                </table>
+            </div>
+            <table id="hintsTable">
+                <tr>
+                    <td><strong>Orizontal:</strong></td>
+                    <td><strong>Vertical:</strong></td>
+                </tr>
+                <tr>
+                    <td>1.forma de stat feudal-teocratica intemeiata de arabi pe teritoriile stapanite de ei</td>
+                    <td>2. acte intenționate de violență comise de un grup pentru a provoca o teamă generalizată și
+                        pentru atingerea unor scopuri
+                    </td>
+                </tr>
+                <tr>
+                    <td>3.legea islamica</td>
+                    <td>6. legea statului islamic</td>
+                </tr>
+                <tr>
+                    <td>4. razboi sfant islamic</td>
+                    <td>7. minoritate islamica connsiderati“infideli-apostazi” de catre DAESH</td>
+                </tr>
+                <tr>
+                    <td>5.numele atribuit statului Islamic de catre tarile occidentate</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+<!-- Copyright Section-->
+<div class="copyright py-4 text-center text-white">
+    <div class="container"><small>Copyright &copy; Your Website 2021</small></div>
+</div>
+
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<!-- * *                               SB Forms JS                               * *-->
+<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    //Globals
+    var currentTextInput;
+    var puzzelArrayData;
+
+    //Loads the Crossword
+    function initializeScreen() {
+        var puzzelTable = document.getElementById("puzzel");
+        puzzelArrayData = preparePuzzelArray();
+        for (var i = 0; i < puzzelArrayData.length; i++) {
+            var row = puzzelTable.insertRow(-1);
+            var rowData = puzzelArrayData[i];
+            for (var j = 0; j < rowData.length; j++) {
+                var cell = row.insertCell(-1);
+                if (rowData[j] != 0) {
+                    var txtID = String('txt' + '_' + i + '_' + j);
+                    cell.innerHTML = '<input type="text" class="inputBox" maxlength="1" style="text-transform: lowercase" ' + 'id="' + txtID + '" onfocus="textInputFocus(' + "'" + txtID + "'" + ')">';
+                } else {
+                    cell.style.backgroundColor = "black";
+                }
             }
-            //Stores ID of the selected cell into currentTextInput
-            function textInputFocus(txtID123){
-                currentTextInput = txtID123;
-            }
-            //Returns Array
-            function preparePuzzelArray(){
-            var items = [   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-                        ];
-            return items;
-            }
-            //Clear All Button
-            function clearAllClicked(){
-                currentTextInput = '';
-                var puzzelTable = document.getElementById("puzzel");
-                puzzelTable.innerHTML = '';
-                initializeScreen();
-            }
-            //Check button
-            function checkClicked(){
-                for ( var i = 0; i < puzzelArrayData.length ; i++ ) {
-                    var rowData = puzzelArrayData[i];
-                    for(var j = 0 ; j < rowData.length ; j++){
-                        if(rowData[j] != 0){
-                            var selectedInputTextElement = document.getElementById('txt' + '_' + i + '_' + j);
-                            if(selectedInputTextElement.value != puzzelArrayData[i][j]){
-                                selectedInputTextElement.style.backgroundColor = 'red';
-                                
-                            }else{
-                                selectedInputTextElement.style.backgroundColor = 'white';
-                            }
-                        }
+        }
+        addHint();
+    }
+
+    //Adds the hint numbers
+    function addHint() {
+        document.getElementById("txt_0_2").placeholder = "1";
+        document.getElementById("txt_0_8").placeholder = "2";
+        document.getElementById("txt_5_0").placeholder = "3,6";
+        document.getElementById("txt_2_5").placeholder = "4";
+        document.getElementById("txt_6_5").placeholder = "5";
+        document.getElementById("txt_3_0").placeholder = "7";
+
+    }
+
+    //Stores ID of the selected cell into currentTextInput
+    function textInputFocus(txtID123) {
+        currentTextInput = txtID123;
+    }
+
+    //Returns Array
+    function preparePuzzelArray() {
+        var items = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        ];
+        return items;
+    }
+
+    //Clear All Button
+    function clearAllClicked() {
+        currentTextInput = '';
+        var puzzelTable = document.getElementById("puzzel");
+        puzzelTable.innerHTML = '';
+        initializeScreen();
+    }
+
+    //Check button
+    function checkClicked() {
+        for (var i = 0; i < puzzelArrayData.length; i++) {
+            var rowData = puzzelArrayData[i];
+            for (var j = 0; j < rowData.length; j++) {
+                if (rowData[j] != 0) {
+                    var selectedInputTextElement = document.getElementById('txt' + '_' + i + '_' + j);
+                    if (selectedInputTextElement.value != puzzelArrayData[i][j]) {
+                        selectedInputTextElement.style.backgroundColor = 'red';
+
+                    } else {
+                        selectedInputTextElement.style.backgroundColor = 'white';
                     }
                 }
             }
-            //Clue Button
-            function clueClicked(){
-                if (currentTextInput != null){
-                    var temp1 = currentTextInput;
-                    var token = temp1.split("_");
-                    var row = token[1];
-                    var column = token[2];
-                    document.getElementById(temp1).value = puzzelArrayData[row][column];
-                    //checkClicked();
-                }
+        }
+    }
+
+    //Clue Button
+    function clueClicked() {
+        if (currentTextInput != null) {
+            var temp1 = currentTextInput;
+            var token = temp1.split("_");
+            var row = token[1];
+            var column = token[2];
+            document.getElementById(temp1).value = puzzelArrayData[row][column];
+            //checkClicked();
+        }
+    }
+
+    //Solve Button
+    function solveClicked() {
+        if (currentTextInput != null) {
+            var temp1 = currentTextInput;
+            var token = temp1.split("_");
+            var row = token[1];
+            var column = token[2];
+
+            // Print elements on top
+            for (j = row; j >= 0; j--) {
+                if (puzzelArrayData[j][column] != 0) {
+                    document.getElementById('txt' + '_' + j + '_' + column).value = puzzelArrayData[j][column];
+                } else break;
             }
-            //Solve Button
-            function solveClicked(){
-                if (currentTextInput != null){
-                    var temp1 = currentTextInput;
-                    var token = temp1.split("_");
-                    var row = token[1];
-                    var column = token[2];
-                    
-                    // Print elements on top
-                    for(j = row; j >= 0; j--){
-                        if(puzzelArrayData[j][column] != 0){
-                            document.getElementById('txt' + '_' + j + '_' + column).value = puzzelArrayData[j][column];
-                            }else break;
-                    }
-                    // Print elements on right
-                    for(i = column; i< puzzelArrayData[row].length; i++){
-                        if(puzzelArrayData[row][i] != 0){
-                            document.getElementById('txt' + '_' + row + '_' + i).value = puzzelArrayData[row][i];
-                            }else break;
-                    }
-                    
-                    // Print elements below
-                    for(m = row; m< puzzelArrayData.length; m++){
-                        if(puzzelArrayData[m][column] != 0){
-                            document.getElementById('txt' + '_' + m + '_' + column).value = puzzelArrayData[m][column];
-                            }else break;
-                    }
-                    // Print elements on left
-                    for(k = column; k >= 0; k--){
-                        if(puzzelArrayData[row][k] != 0){
-                            document.getElementById('txt' + '_' + row + '_' + k).value = puzzelArrayData[row][k];
-                            }else break;
-                    }
-                    // Done!
-                    
-                }
+            // Print elements on right
+            for (i = column; i < puzzelArrayData[row].length; i++) {
+                if (puzzelArrayData[row][i] != 0) {
+                    document.getElementById('txt' + '_' + row + '_' + i).value = puzzelArrayData[row][i];
+                } else break;
             }
 
-            initializeScreen();
-        </script>
-    
-    </body>
+            // Print elements below
+            for (m = row; m < puzzelArrayData.length; m++) {
+                if (puzzelArrayData[m][column] != 0) {
+                    document.getElementById('txt' + '_' + m + '_' + column).value = puzzelArrayData[m][column];
+                } else break;
+            }
+            // Print elements on left
+            for (k = column; k >= 0; k--) {
+                if (puzzelArrayData[row][k] != 0) {
+                    document.getElementById('txt' + '_' + row + '_' + k).value = puzzelArrayData[row][k];
+                } else break;
+            }
+            // Done!
+
+        }
+    }
+
+    initializeScreen();
+</script>
+
+</body>
 </html>
