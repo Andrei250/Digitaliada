@@ -128,7 +128,7 @@
 
 <section id="harta" class="mt-4">
     <div class="align-content-center" style="text-align: center; margin-top: 50px; margin-bottom: 100px">
-        <h2>Raurile Romaniei</h2>
+        <h2>Harta Raurilor din Romania</h2>
     </div>
     <div class="container mt-4">
         <div class="mt-4 row align-items-start justify-content-between">
@@ -179,7 +179,6 @@
                             </p>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="harta-content-div" id="mures">
@@ -327,6 +326,10 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="align-content-center" style="text-align: center; margin-top: 50px; margin-bottom: 100px">
+                <h2>Harta Fizica din Romania</h2>
+            </div>
 
             <div class="mt-4 row align-items-start justify-content-between">
                 <div class="harta">
@@ -345,16 +348,23 @@
                 </div>
 
                 <div class="harta-content">
-                    <div class="harta-content-div-relief" id="omu">
-                        Vârful Omu din Munții Bucegi este vârful muntos clasat al șaselea între vârfurile
-                        muntoase
-                        din
-                        România, situat în Masivul Bucegi, reprezentând cel mai înalt punct al acestui
-                        masiv.<br/>
-                        Pe Vârful Omu se află Cabana Omu, precum și Stația meteorologică Vârful Omu, care
-                        poate
-                        fi
-                        considerată locul cel mai înalt din România populat permanent.
+                    <div class="harta-content-div" id="omu">
+                        <div class="card" style="width: 30rem;">
+                            <img src="https://www.imperialtransilvania.com/typo3temp/pics/D_6cc5ba5b0c.jpg"
+                                 class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text"> Vârful Omu din Munții Bucegi este vârful muntos clasat al șaselea între vârfurile
+                                    muntoase
+                                    din
+                                    România, situat în Masivul Bucegi, reprezentând cel mai înalt punct al acestui
+                                    masiv.<br/>
+                                    Pe Vârful Omu se află Cabana Omu, precum și Stația meteorologică Vârful Omu, care
+                                    poate
+                                    fi
+                                    considerată locul cel mai înalt din România populat permanent.
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="harta-content-div-relief" id="moldoveanu">
@@ -560,7 +570,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script>
-    $('.harta').mousemove((e) => {
+    $('.harta').click((e) => {
         let x = e.pageX - $(e.target).offset().left;
         let y = e.pageY - $(e.target).offset().top;
         console.log(x + ' ' + y);
