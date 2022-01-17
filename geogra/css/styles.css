@@ -11515,4 +11515,124 @@ html {
   background-color: #34271C;
 }
 
+.harta {
+  width: 600px;
+  position: relative;
+}
 
+.punct {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 3px solid grey;
+  border-radius: 50%;
+  background-color:black;
+  cursor: pointer;
+  transition: transform .4s;
+}
+
+.jiu {
+  top: 279px;
+  left: 190px;
+}
+
+.olt {
+  top: 276px;
+  left: 245px;
+}
+
+.ialomita {
+  top: 285px;
+  left: 360px;
+}
+
+.dunarea {
+  top: 285px;
+  left: 460px;
+}
+
+.bistrita {
+  top: 98px;
+  left: 345px;
+}
+
+.siret {
+  top: 181px;
+  left: 415px;
+}
+
+.mures {
+  top: 185px;
+  left: 185px;
+}
+
+.somes {
+  top: 80px;
+  left: 192px;
+}
+
+.punct:hover {
+  transform: scale(1.5);
+}
+
+.omu {
+  left: 330px;
+  top: 250px;
+}
+
+.moldoveanu {
+  left: 290px;
+  top: 235px;
+  width:15px;
+  height:15px;
+}
+
+.negoiu {
+  left: 265px;
+  top: 235px;
+  width:15px;
+  height:15px;
+}
+
+.cromana {
+  left: 390px;
+  top: 330px;
+}
+
+.vest {
+  left: 105px;
+  top: 105px;
+}
+
+.transalpina {
+  left: 212px;
+  top: 246px;
+  width: 15px;
+  height: 15px;
+}
+
+.delta {
+  left: 548px;
+  top: 281px;
+}
+
+.parang {
+  left: 200px;
+  top: 230px;
+  width: 20px;
+  height: 20px;
+}
+
+.ana {
+  left: 342px;
+  top: 197px;
+  width: 15px;
+  height: 15px;
+}
+
+.apuseni {
+  left: 185px;
+  top: 159px;
+  width: 15px;
+  height: 15px;
+} 

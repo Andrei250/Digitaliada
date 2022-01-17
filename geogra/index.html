@@ -128,8 +128,48 @@
 
 <section id="harta">
     <div class="container">
-        <div class="row">
+        <div class="row align-items-start justify-content-between">
+            <div class="harta">
+                <img src="assets/rau.png" class="w-100"/>
+            
+                <div class="punct jiu" data-value="jiu"></div>
+                <div class="punct mures" data-value="mures"></div>
+                <div class="punct olt" data-value="olt"></div>
+                <div class="punct dunarea" data-value="dunarea"></div>
+                <div class="punct ialomita" data-value="ialomita"></div>
+                <div class="punct siret" data-value="siret"></div>
+                <div class="punct bistrita" data-value="bistrita"></div>
+                <div class="punct somes" data-value="somes"></div>
+            </div>
 
+            <div class="harta-content">
+                <div class="harta-content-div" id="jiu">
+                    dadada
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-start justify-content-between">
+            <div class="harta">
+                <img src="assets/harta.png" class="w-100"/>
+            
+                <div class="punct omu" data-value="omu"></div>
+                <div class="punct moldoveanu" data-value="moldoveanu"></div>
+                <div class="punct cromana" data-value="cromana"></div>
+                <div class="punct vest" data-value="vest"></div>
+                <div class="punct transalpina" data-value="transalpina"></div>
+                <div class="punct delta" data-value="delta"></div>
+                <div class="punct negoiu" data-value="negoiu"></div>
+                <div class="punct parang" data-value="parang"></div>
+                <div class="punct ana" data-value="ana"></div>
+                <div class="punct apuseni" data-value="apuseni"></div>
+            </div>
+
+            <div class="harta-content">
+                <div class="harta-content-div" id="omu">
+                    dadada
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -194,6 +234,23 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $('.harta').mousemove((e) => {
+        let x = e.pageX - $(e.target).offset().left;
+        let y = e.pageY - $(e.target).offset().top;
+        console.log(x + ' ' + y);
+    });
+
+    $('.harta-content-div').hide()
+
+    $('.punct').click((e) => {
+        $('.harta-content-div').hide();
+        let id = $(e.target).data('value')
+
+        $('#' + id).show();
+    });
+</script>
 
 <script>
     //Globals
